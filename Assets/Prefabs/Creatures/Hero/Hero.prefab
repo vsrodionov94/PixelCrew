@@ -124,7 +124,8 @@ MonoBehaviour:
   _mask:
     serializedVersion: 2
     m_Bits: 256
-  _tags: []
+  _tags:
+  - Interactables
   _onOverlap:
     m_PersistentCalls:
       m_Calls:
@@ -5229,7 +5230,7 @@ MonoBehaviour:
   _radius: 0.32
   _mask:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 4294967295
   _tags:
   - Enemy
   _onOverlap:

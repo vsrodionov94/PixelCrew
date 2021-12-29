@@ -11,9 +11,7 @@ GameObject:
   - component: {fileID: 563109193839227379}
   - component: {fileID: 941063511077972558}
   - component: {fileID: 231667885253505418}
-  - component: {fileID: 5728477937991091219}
-  - component: {fileID: 1168719236365954436}
-  - component: {fileID: 4552432671927519503}
+  - component: {fileID: 4213824573745584162}
   m_Layer: 7
   m_Name: WoodenDoor(Enter)
   m_TagString: Interactables
@@ -72,15 +70,15 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 1283166643
+  m_SortingLayerID: -2050671593
   m_SortingLayer: 1
-  m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 9f13b7995ef770e4cb31f61912adbab1, type: 3}
+  m_SortingOrder: 2
+  m_Sprite: {fileID: 21300000, guid: 452aa9f1e0427fe4e9834c3d211da190, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 0.64, y: 0.64}
+  m_Size: {x: 2, y: 2}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -104,7 +102,7 @@ BoxCollider2D:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
     oldSize: {x: 2, y: 2}
-    newSize: {x: 0.64, y: 0.64}
+    newSize: {x: 2, y: 2}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
@@ -112,7 +110,7 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1.2183194, y: 1.5354164}
   m_EdgeRadius: 0
---- !u!114 &5728477937991091219
+--- !u!114 &4213824573745584162
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -121,7 +119,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 6884809506528388983}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bc6f87184ba65ee45a1896d6be11bf21, type: 3}
+  m_Script: {fileID: 11500000, guid: 48fce32720296ea4e80808fb3ed4a76c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   _frameRate: 10
@@ -129,75 +127,27 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   _clips:
-  - _name: idle
+  - _name: close
     _sprites:
-    - {fileID: 21300000, guid: 9f13b7995ef770e4cb31f61912adbab1, type: 3}
-    _loop: 0
-    _allowNextClip: 0
-    _onComplete:
-      m_PersistentCalls:
-        m_Calls: []
-  - _name: open
-    _sprites:
-    - {fileID: 21300000, guid: 9f13b7995ef770e4cb31f61912adbab1, type: 3}
-    - {fileID: 21300000, guid: 1fbe60f13c57f4d4f9b0af770a86a4b6, type: 3}
-    - {fileID: 21300000, guid: d42443f4f670b6243a0a05c037dbbece, type: 3}
-    - {fileID: 21300000, guid: 381e86e2d21bd0b48adcc0b4c77c54c9, type: 3}
-    - {fileID: 21300000, guid: 471c8f8288e0f6c4bb08622995da906b, type: 3}
+    - {fileID: 21300000, guid: 452aa9f1e0427fe4e9834c3d211da190, type: 3}
+    - {fileID: 21300000, guid: 29b438e28c8d33748b27459a49607efd, type: 3}
+    - {fileID: 21300000, guid: 6dbf11e5e2db61c4197c6bf8c0ede911, type: 3}
+    - {fileID: 21300000, guid: 121cfdf1ce89f954faf944f280771587, type: 3}
+    - {fileID: 21300000, guid: c04917bb90fc5794992c440b68c71dcb, type: 3}
     _loop: 0
     _allowNextClip: 0
     _onComplete:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 1168719236365954436}
-          m_TargetAssemblyTypeName: ExitLevelComponent, Assembly-CSharp
-          m_MethodName: Exit
+        - m_Target: {fileID: 0}
+          m_TargetAssemblyTypeName: 
+          m_MethodName: 
           m_Mode: 1
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_ObjectArgumentAssemblyTypeName: 
             m_IntArgument: 0
             m_FloatArgument: 0
             m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
---- !u!114 &1168719236365954436
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6884809506528388983}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f32e284e17661d2428a15fdb0675702c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _sceneName: Level2
---- !u!114 &4552432671927519503
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6884809506528388983}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9332255f0f78fa6429253f199ae80825, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _action:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 5728477937991091219}
-        m_TargetAssemblyTypeName: SpriteAnimation, Assembly-CSharp
-        m_MethodName: SetClip
-        m_Mode: 5
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: open
-          m_BoolArgument: 0
-        m_CallState: 2

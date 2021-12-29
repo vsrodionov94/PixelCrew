@@ -10,7 +10,7 @@ TagManager:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - 
+  - Props
   - Water
   - UI
   - Ground
@@ -18,9 +18,9 @@ TagManager:
   - Interactions
   - Hero
   - Trash
-  - 
-  - 
-  - 
+  - Enemies
+  - Collectables
+  - Checkers
   - 
   - 
   - 
